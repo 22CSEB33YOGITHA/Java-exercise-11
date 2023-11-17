@@ -1,0 +1,34 @@
+}
+    public void handleButtonAction(Color bgColor, Color fgColor) {
+        getContentPane().setBackground(bgColor);
+        l1.setForeground(fgColor);
+        l2.setForeground(fgColor);
+        l3.setForeground(fgColor);
+        b1.setForeground(fgColor);
+        b2.setForeground(fgColor);
+        b1.setBackground(bgColor);
+        b2.setBackground(bgColor);
+        b3.setBackground(bgColor);
+        b4.setBackground(bgColor);
+        b3.setForeground(fgColor);
+        b4.setForeground(fgColor);
+    }
+
+    public void actionPerformed(ActionEvent ae){
+        if(ae.getSource()==b1){
+            handleButtonAction(Color.red, Color.white);
+        }
+        if(ae.getSource()==b2){
+            handleButtonAction(Color.blue, Color.white);
+        }
+        if(ae.getSource()==b3){
+            area.setBackground(Color.lightGray);
+        }
+        if(ae.getSource()==b4){
+            area.setBackground(Color.green);
+        }
+    }
+    public static void main(String[] args) {
+        new Backgroundchange();
+    }
+}
